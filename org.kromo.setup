@@ -2130,6 +2130,24 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
+      id="p2.jcup.editors"
+      label="de.jcup Editors - AsciiDoctor / Bash / YAML"
+      licenseConfirmationDisabled="true">
+    <requirement
+        name="de.jcup.asciidoctoreditor.feature.group"/>
+    <requirement
+        name="de.jcup.basheditor.feature.group"/>
+    <requirement
+        name="de.jcup.yamleditor.feature.group"/>
+    <repository
+        url="https://dl.bintray.com/de-jcup/asciidoctoreditor"/>
+    <repository
+        url="https://dl.bintray.com/de-jcup/basheditor"/>
+    <repository
+        url="https://dl.bintray.com/de-jcup/yamleditor"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
       id="p2.eclipse"
       label="EclEmma"
       licenseConfirmationDisabled="true">
