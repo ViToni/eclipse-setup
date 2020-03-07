@@ -2243,6 +2243,16 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
+      id="p2.sonarlint"
+      label="Sonarlint"
+      licenseConfirmationDisabled="true">
+    <requirement
+        name="org.sonarlint.eclipse.feature.feature.group"/>
+    <repository
+        url="https://eclipse-uc.sonarlint.org"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
       id="p2.spotbugs"
       label="SpotBugs"
       licenseConfirmationDisabled="true">
