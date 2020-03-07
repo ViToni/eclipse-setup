@@ -15,6 +15,7 @@ The Oomph setup will install Eclipse, plugins and configure Eclipse defaults.
 
 Plugin|Description
 ---|---
+Code Recommenders|(optional)
 de.jcup AsciiDoctor Editor|
 de.jcup Bash Editor|
 de.jcup YAML Editor|

@@ -140,6 +140,14 @@
         label="Install DevStyle">
       <description>Install DevStyle. Will be activted AFTER first eclipse restart.</description>
     </setupTask>
+    <setupTask
+        xsi:type="setup:VariableTask"
+        type="BOOLEAN"
+        name="useroption.code.recommenders"
+        defaultValue="false"
+        label="Install code recommenders">
+      <description>Install code recommenders</description>
+    </setupTask>
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
@@ -2135,6 +2143,21 @@
           key="/instance/org.eclipse.wst.xml.core/outputCodeset"
           value="UTF-8"/>
     </setupTask>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      id="p2.coderecommenders"
+      filter="(useroption.code.recommenders=true)"
+      label="Code Recommenders"
+      licenseConfirmationDisabled="true">
+    <requirement
+        name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+    <repository
+        url="https://repo.eclipse.org/content/shadows/releases.unzip/org/eclipse/recommenders/stable/2.5.4/stable-2.5.4.zip-unzip/"/>
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
