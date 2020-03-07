@@ -18,6 +18,7 @@ Plugin|Description
 de.jcup AsciiDoctor Editor|
 de.jcup Bash Editor|
 de.jcup YAML Editor|
+DevTools|(optional) Themeing and customization
 EasyShell|Allows to open a shell window or file manager from the popup menu
 ECD|Enhanced Class Decompiler
 EclEmma|Code coverage

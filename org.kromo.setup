@@ -132,6 +132,14 @@
         label="Use dark theme">
       <description>Setup dark theme as default. Will be activted AFTER first eclipse restart.</description>
     </setupTask>
+    <setupTask
+        xsi:type="setup:VariableTask"
+        type="BOOLEAN"
+        name="useroption.devstyle"
+        defaultValue="true"
+        label="Install DevStyle">
+      <description>Install DevStyle. Will be activted AFTER first eclipse restart.</description>
+    </setupTask>
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
@@ -2145,6 +2153,17 @@
         url="https://dl.bintray.com/de-jcup/basheditor"/>
     <repository
         url="https://dl.bintray.com/de-jcup/yamleditor"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      id="p2.devtools"
+      filter="(useroption.devstyle=true)"
+      label="DevTools"
+      licenseConfirmationDisabled="true">
+    <requirement
+        name="com.genuitec.eclipse.theming.feature.feature.group"/>
+    <repository
+        url="https://www.genuitec.com/updates/devstyle/ci/"/>
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
