@@ -24,3 +24,4 @@ Eclipse Mylyn|Task focused workflow in Eclipse
 Eclipse WST|Web standard tools to edit JavaScript, HTML, XML, etc.
 SonarLint|Static code analyzer
 SpotBugs|Static code analyzer
+TestNG for Eclipse|TestNG integration for Eclipse
