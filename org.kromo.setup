@@ -626,6 +626,17 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
+      id="p2.egit"
+      label="Eclipse EGit"
+      licenseConfirmationDisabled="true">
+    <requirement
+        name="org.eclipse.egit.feature.group"/>
+    <repository
+        url="https://download.eclipse.org/egit/updates"/>
+    <description>Git connector</description>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
       id="p2.eclipse.m2e"
       label="Eclipse M2E"
       licenseConfirmationDisabled="true">
