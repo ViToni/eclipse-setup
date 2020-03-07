@@ -19,6 +19,7 @@ de.jcup AsciiDoctor Editor|
 de.jcup Bash Editor|
 de.jcup YAML Editor|
 EasyShell|Allows to open a shell window or file manager from the popup menu
+ECD|Enhanced Class Decompiler
 EclEmma|Code coverage
 Eclipse Buildship|Gradle editor
 Eclipse EGit|Eclipse git integration / Java git client/library
