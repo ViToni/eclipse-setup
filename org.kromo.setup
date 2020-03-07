@@ -2151,6 +2151,18 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
+      id="p2.eclipse.mat"
+      label="Eclipse MAT - Memory Analyzer"
+      licenseConfirmationDisabled="true">
+    <requirement
+        name="org.eclipse.mat.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mat.chart.feature.feature.group"/>
+    <repository
+        url="https://download.eclipse.org/mat/latest/update-site/"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
       id="p2.eclipse.mylyn"
       label="Eclipse Mylyn Features"
       licenseConfirmationDisabled="true">

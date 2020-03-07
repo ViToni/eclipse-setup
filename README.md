@@ -17,5 +17,6 @@ Plugin|Description
 ---|---
 Eclipse EGit|Eclipse git integration / Java git client/library
 Eclipse M2E|Eclipse Maven integration
+Eclipse MAT|Memory Analyzer (helps analyzing heapdumps)
 Eclipse Mylyn|Task focused workflow in Eclipse
 Eclipse WST|Web standard tools to edit JavaScript, HTML, XML, etc.
