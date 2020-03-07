@@ -29,6 +29,7 @@ Eclipse EGit|Eclipse git integration / Java git client/library
 Eclipse M2E|Eclipse Maven integration
 Eclipse MAT|Memory Analyzer (helps analyzing heapdumps)
 Eclipse Mylyn|Task focused workflow in Eclipse
+Eclipse RelEng|Release engineering tool (eg. helps mass-fixing copyright header in files)
 Eclipse WST|Web standard tools to edit JavaScript, HTML, XML, etc.
 SonarLint|Static code analyzer
 SpotBugs|Static code analyzer

@@ -2854,6 +2854,16 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
+      id="p2.eclipse.releng"
+      label="Eclipse RelEng"
+      licenseConfirmationDisabled="true">
+    <requirement
+        name="org.eclipse.releng.tools.feature.group"/>
+    <repository
+        url="https://download.eclipse.org/eclipse/updates/latest"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
       id="p2.wst"
       label="Eclipse WST - web standard tools"
       licenseConfirmationDisabled="true">
