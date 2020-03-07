@@ -18,6 +18,7 @@ Plugin|Description
 de.jcup AsciiDoctor Editor|
 de.jcup Bash Editor|
 de.jcup YAML Editor|
+EasyShell|Allows to open a shell window or file manager from the popup menu
 EclEmma|Code coverage
 Eclipse Buildship|Gradle editor
 Eclipse EGit|Eclipse git integration / Java git client/library

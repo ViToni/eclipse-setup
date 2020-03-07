@@ -2148,6 +2148,17 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
+      id="p2.easyshell"
+      label="EasyShell"
+      licenseConfirmationDisabled="true">
+    <requirement
+        name="de.anbos.eclipse.easyshell.feature.feature.group"
+        versionRange="[2.1.0,3.0.0)"/>
+    <repository
+        url="https://anb0s.github.io/EasyShell"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
       id="p2.eclipse"
       label="EclEmma"
       licenseConfirmationDisabled="true">
