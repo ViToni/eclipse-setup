@@ -105,6 +105,11 @@
     <description>In case groovy-eclipse gets installed this enables the non-locking classloader</description>
   </setupTask>
   <setupTask
+      xsi:type="setup:EclipseIniTask"
+      filter="(useroption.bnd.perspective=true)"
+      option="-perspective"
+      value="bndtools.perspective"/>
+  <setupTask
       xsi:type="setup:ResourceCreationTask"
       id="disable.welcome.screen"
       content="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;state reopen=&quot;false&quot;/>&#xA;"
@@ -143,6 +148,14 @@
     <setupTask
         xsi:type="setup:VariableTask"
         type="BOOLEAN"
+        name="useroption.bnd.perspective"
+        defaultValue="false"
+        label="Default perspective: bnd">
+      <description>Set the bnd perspective as default.</description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:VariableTask"
+        type="BOOLEAN"
         name="useroption.code.recommenders"
         defaultValue="false"
         label="Install code recommenders">
@@ -152,6 +165,18 @@
   <setupTask
       xsi:type="setup:CompoundTask"
       name="Global Preferences">
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="bndtools.core">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/bndtools.core/buildBeforeLaunch"
+          value="false"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/bndtools.core/buildLogging"
+          value="2"/>
+    </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
         name="org.codehaus.groovy.eclipse.dsl">
@@ -2143,6 +2168,18 @@
           key="/instance/org.eclipse.wst.xml.core/outputCodeset"
           value="UTF-8"/>
     </setupTask>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      id="p2.bnd"
+      label="bndtools"
+      licenseConfirmationDisabled="true">
+    <requirement
+        name="bndtools.main.feature.feature.group"/>
+    <requirement
+        name="bndtools.m2e.feature.feature.group"/>
+    <repository
+        url="https://bndtools.jfrog.io/bndtools/update-latest"/>
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
