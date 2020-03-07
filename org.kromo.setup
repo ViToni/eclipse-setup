@@ -2130,6 +2130,16 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
+      id="p2.eclipse.buildship"
+      label="Eclipse Buildship"
+      licenseConfirmationDisabled="true">
+    <requirement
+        name="org.eclipse.buildship.feature.group"/>
+    <repository
+        url="https://download.eclipse.org/buildship/updates/latest"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
       id="p2.egit"
       label="Eclipse EGit"
       licenseConfirmationDisabled="true">
