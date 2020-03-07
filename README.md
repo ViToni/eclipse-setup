@@ -15,6 +15,7 @@ The Oomph setup will install Eclipse, plugins and configure Eclipse defaults.
 
 Plugin|Description
 ---|---
+EclEmma|Code coverage
 Eclipse Buildship|Gradle editor
 Eclipse EGit|Eclipse git integration / Java git client/library
 Eclipse M2E|Eclipse Maven integration

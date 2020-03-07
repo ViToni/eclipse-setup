@@ -2130,6 +2130,16 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
+      id="p2.eclipse"
+      label="EclEmma"
+      licenseConfirmationDisabled="true">
+    <requirement
+        name="org.eclipse.eclemma.feature.feature.group"/>
+    <repository
+        url="http://update.eclemma.org/"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
       id="p2.eclipse.buildship"
       label="Eclipse Buildship"
       licenseConfirmationDisabled="true">
